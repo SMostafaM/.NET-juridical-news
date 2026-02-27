@@ -1,0 +1,229 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_dashboard.cshtml";
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
+    <!-- <meta content="width=600" name="viewport"> -->
+
+    <title>Title</title>
+    <link rel="stylesheet" href="/lib/Trumbowyg-main/dist/ui/trumbowyg.min.css">
+    <link rel="stylesheet" href="/h_front/style/style.css" />
+    <link rel="stylesheet" href="/h_front/style/mpn.css" />
+    <link rel="stylesheet" href="/h_front/style/bs.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+          crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+                /* Change background color of buttons on hover */
+                .tab button:hover {
+                    background-color: #ddd;
+                }
+
+                /* Create an active/current tablink class */
+                .tab button.active {
+                    background-color: #ccc;
+                }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+    @*   <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'M1')">زیر موضوع 1</button>
+            <button class="tablinks" onclick="openCity(event, 'M2')">زیر موضوع 2</button>
+            <button class="tablinks" onclick="openCity(event, 'M3')">زیر موضوع 3</button>
+            <button class="tablinks" onclick="openCity(event, 'M4')">زیر موضوع 4</button>
+        </div>*@
+
+    <form action="~/News/Create" method="post" enctype="multipart/form-data">
+
+
+
+
+
+
+
+
+        <div class="container">
+            <div class="row rtl">
+
+
+                <div class="col-lg-9 my-5">
+
+                    <div class="bg-white shadow border-r20 w-100 p-3 text-right ">
+                        <div class="form-group my-3 py-3">
+                            <p class="font-weight-bold text-right mx-2"
+                               style="font-size: 12px !important;">
+                                عنوان اخبار :
+                            </p>
+                            <div class="d-flex w-100 ">
+                                <input name="name" type="text" class="form-control " />
+                            </div>
+
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <input type="radio" id="state0" name="state" value="0">
+                    <label for="state0">حذف اطلاعات قبلی</label><br>
+                    <input type="radio" id="state1" name="state" value="1">
+                    <label for="state1">اضافه کردن به اطلاعات قبلی</label><br>
+                    <br />
+                    <br />
+
+
+                    @for (int n = 0; n < 10; n++)
+                    {
+                        <div class="bg-white shadow border-r20 w-100 p-3 text-right after-add-more5">
+                            <div class="form-group my-3 py-3">
+                                <p class="font-weight-bold text-right mx-2"
+                                   style="font-size: 12px !important;">
+                                    <h2>@n</h2>
+                                </p>
+                                <p class="font-weight-bold text-right mx-2"
+                                   style="font-size: 12px !important;">
+                                    تیتر :
+                                </p>
+                                <div class="d-flex w-100 ">
+                                    <input name="L_t_t_f[@n].title" type="text" class="form-control " />
+                                </div>
+                                <br />
+                                <br />
+                                <p class="font-weight-bold text-right mx-2"
+                                   style="font-size: 12px !important;">
+                                    متن :
+                                </p>
+                                <div class="d-flex w-100 ">
+                                    @{string s = "editor" + n.ToString();}
+                                    <textarea runat="server" id=@s name="L_t_t_f[@n].txt" type="text" class="form-control "></textarea>
+                                </div>
+
+                                <br />
+                                <br />
+                                <p class="font-weight-bold text-right mx-2"
+                                   style="font-size: 12px !important;">
+                                    عکس :
+                                </p>
+                                <div class="d-flex w-100 ">
+                                    <input name="L_t_t_f[@n].file" type="file" class="form-control" />
+                                </div>
+                                <br />
+                                <br />
+                                @*<div dir="ltr" class="w-40-px h-40-px border-r10  shadow-sm pointer mx-2 ">
+            <div class="input-group-btn">
+                <button class="btn btn-success add-more5" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+            </div>
+        </div>*@
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                    }
+
+
+
+
+                   @* <br />
+                    <br />
+                    <div class="bg-white shadow border-r20 w-100 p-3 text-right after-add-more6">
+                        <div class="form-group my-3 py-3">
+                            <p class="font-weight-bold text-right mx-2"
+                               style="font-size: 12px !important;">
+                                تیتر اخبار در صفحه اصلی :
+                            </p>
+                            <div class="d-flex w-100 ">
+                                <input name="txt[0]" type="text" class="form-control " />
+                            </div>
+                            <br />
+                            <div dir="ltr" class="w-40-px h-40-px border-r10  shadow-sm pointer mx-2 ">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-success add-more6" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>*@
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <button class="btn btn-success w-100">ذخیره اطلاعات</button>
+    </form>
+
+
+    <script src='/lib/jquery/dist/jquery.min.js'></script>
+    <script src="/click_to_add/js.js"></script>
+    <!--txt editor -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="/lib/Trumbowyg-main/dist/trumbowyg.min.js"></script>
+
+    <script src="/lib/Trumbowyg-main/dist/plugins/cleanpaste/trumbowyg.cleanpaste.min.js"></script>
+    <script src="~/lib/Trumbowyg-main/dist/plugins/upload/trumbowyg.upload.min.js"></script>
+
+
+    <script>
+        // Doing this in a loaded JS file is better, I put this here for simplicity
+        for (let i = 0; i < 20; i++) {
+            var ed = "#editor" + i.toString();
+            $(ed).trumbowyg();
+        }
+    </script>
+</body>
+</html>
+
+

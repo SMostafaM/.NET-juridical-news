@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_dashboard.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Three Pure CSS Button </title>
+
+    <link rel="stylesheet" href="/button/style.css">
+
+</head>
+<body>
+
+    <h1 class="main">اخبار</h1>
+    <div style="padding-top:10%;" class="main">
+
+        @*        <div class="sub-main">
+                <button class="button-one">Tap Me</button>
+            </div>
+            <div class="sub-main">
+                <button class="button-two"><span>Hover Me</span></button>
+            </div>*@
+        <a href="~/dashboard/Details?type=news" class="sub-main">
+            <button class="button-three">مشاهده</button>
+        </a>
+        <a href="~/dashboard/Create?type=news" class="sub-main">
+            <button class="button-three">ایجاد</button>
+        </a>
+        <a href="~/dashboard/Edit?type=news" class="sub-main">
+            <button class="button-three">ویرایش</button>
+        </a>
+    </div>
+
+
+</body>
+</html>
+
+

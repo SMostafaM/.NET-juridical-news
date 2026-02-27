@@ -1,0 +1,1232 @@
+﻿@model hoghoogh_app.Models.Home
+@{
+    Layout = null;
+}
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title> حقوق ایرانیان</title>
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/news_front/css/bootstrap.min.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="/news_front/css/style.css">
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="/news_front/css/responsive.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="/news_front/css/font-awesome.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="/news_front/css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="/news_front/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/news_front/css/owl.theme.default.min.css">
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="/news_front/css/colorbox.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="boxed-layout">
+
+    <div class="body-inner">
+
+
+        <div class="trending-bar hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="trending-title">تازه ترین اخبار</h3>
+                        <div id="trending-slide" class="owl-carousel owl-theme trending-slide">
+
+
+                            <div class="item">
+                                <div class="post-content">
+                                    <h2 class="post-title title-small">
+                                        <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_1.L_t_t_f[0].title</a>
+                                    </h2>
+                                </div><!-- Post content end -->
+                            </div><!-- Item 1 end -->
+                            <div class="item">
+                                <div class="post-content">
+                                    <h2 class="post-title title-small">
+                                        <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_2.L_t_t_f[0].title</a>
+                                    </h2>
+                                </div><!-- Post content end -->
+                            </div><!-- Item 1 end -->
+                            <div class="item">
+                                <div class="post-content">
+                                    <h2 class="post-title title-small">
+                                        <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_3.L_t_t_f[0].title</a>
+                                    </h2>
+                                </div><!-- Post content end -->
+                            </div><!-- Item 1 end -->
+                            <div class="item">
+                                <div class="post-content">
+                                    <h2 class="post-title title-small">
+                                        <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_4.L_t_t_f[0].title</a>
+                                    </h2>
+                                </div><!-- Post content end -->
+                            </div><!-- Item 1 end -->
+
+
+
+
+
+                        </div><!-- Carousel end -->
+                    </div><!-- Col end -->
+                </div><!--/ Row end -->
+            </div><!--/ Container end -->
+        </div><!--/ Trending end -->
+
+        <div id="top-bar" class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="ts-date">
+                            <i class="fa fa-calendar-check-o"></i>@DateTime.Now.Date.DayOfWeek
+                        </div>
+                        <ul class="unstyled top-nav">
+                            <li><a href="~/Home/about">درباره ما</a></li>
+                            <li><a href="~/Home/contact">تماس با ما </a></li>
+                        </ul>
+                    </div><!--/ Top bar left end -->
+
+                    <div class="col-md-4 col-sm-4 col-xs-12 top-social text-right">
+                        <ul class="unstyled">
+                            <li>
+                                <a title="Facebook" href="#">
+                                    <span class="social-icon"><i class="fa fa-facebook"></i></span>
+                                </a>
+                                <a title="Twitter" href="#">
+                                    <span class="social-icon"><i class="fa fa-twitter"></i></span>
+                                </a>
+                                <a title="telegram" href="https://t.me/iraniansrights">
+                                    <span class="social-icon"><i class="fa fa-telegram"></i></span>
+                                </a>
+                                <a title="instagram" href="https://www.instagram.com/iraniansrights/">
+                                    <span class="social-icon"><i class="fa fa-instagram"></i></span>
+                                </a>
+                                <a title="Skype" href="skype:iraniansrights?chat ">
+                                    <span class="social-icon"><i class="fa fa-skype"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--/ Top social end -->
+                </div><!--/ Content row end -->
+            </div><!--/ Container end -->
+        </div><!--/ Topbar end -->
+        <!-- Header start -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <!--<div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="logo">
+                        <a href="#">
+                            <img style="width:90px;height:90px" src="/news_front/images/logos/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>-->
+                    <!-- logo col end -->
+                    @*<div class="col-xs-12 col-sm-9 col-md-9 header-right">*@
+                    <div class="ad-banner pull-right">
+                        <a href="~/Home/index"><img style="padding-top:15px;" src="~/news_front/images/banner-ads/header.jpg" class="img-responsive" alt=""></a>
+
+                    </div>
+                    <!--</div>--><!-- header right end -->
+                </div><!-- Row end -->
+            </div><!-- Logo and banner area end -->
+        </header><!--/ Header end -->
+
+        <div class="main-nav clearfix">
+            <div class="container">
+                <div class="row">
+
+
+
+                    <div class="col-xs-12 col-md-12">
+                        <nav class="site-navigation navigation">
+                            <div class="site-nav-inner">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">تغییر وضعیت ناوبری</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                                    <ul class="nav navbar-nav">
+                                        @* <li class="dropdown active">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">خانه <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="index.html">خانه 1</a></li>
+                                                <li><a href="index-2.html">خانه 2</a></li>
+                                                <li><a href="index-3.html">خانه 3</a></li>
+                                                <li><a href="index-4.html">خانه 4</a></li>
+                                                <li class="active"><a href="index-5.html">خانه 5</a></li>
+                                            </ul>
+                                        </li>*@
+
+                                        <li class="dropdown mega-dropdown">
+                                            <a href="~/M1_4_lttf/Details" class="dropdown-toggle;"> @Model.M1_L_4.name <i class="fa fa-angle-down"></i></a>
+                                            <div class="dropdown-menu mega-menu-content hidden-xs hidden-sm clearfix">
+                                                <div class="menu-tab">
+                                                    <ul class="nav nav-tabs nav-stacked col-md-2" data-toggle="tab-hover">
+                                                        <li class="active">
+                                                            <a class="animated fadeIn" href="#tab-A" data-toggle="tab">
+                                                                <span class="tab-head">
+                                                                    <span class="tab-text-title">@Model.M1_L_4.L_t_t_f_1.name</span>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="animated fadeIn" href="#tab-B" data-toggle="tab">
+                                                                <span class="tab-head">
+                                                                    <span class="tab-text-title">@Model.M1_L_4.L_t_t_f_2.name</span>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="animated fadeIn" href="#tab-C" data-toggle="tab">
+                                                                <span class="tab-head">
+                                                                    <span class="tab-text-title">@Model.M1_L_4.L_t_t_f_3.name</span>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="animated fadeIn" href="#tab-D" data-toggle="tab">
+                                                                <span class="tab-head">
+                                                                    <span class="tab-text-title">@Model.M1_L_4.L_t_t_f_4.name</span>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="tab-content col-md-10">
+                                                        @if (Model.M1_L_4.L_t_t_f_1.L_t_t_f != null)
+                                                        {
+                                                            <div class="tab-pane active animated fadeIn" id="tab-A">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_1.L_t_t_f[0].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_1.L_t_t_f[0].file_address" alt=""></a>
+                                                                                }
+
+                                                                            </div>
+                                                                            <a class="post-cat" href="#">@Model.M1_L_4.L_t_t_f_1.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_1.L_t_t_f[0].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 1 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_1.L_t_t_f[1].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_1.L_t_t_f[1].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="#">@Model.M1_L_4.L_t_t_f_1.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_1.L_t_t_f[1].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 2 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_1.L_t_t_f[2].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_1.L_t_t_f[2].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="#">@Model.M1_L_4.L_t_t_f_1.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_1.L_t_t_f[2].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 3 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_1.L_t_t_f[3].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_1.L_t_t_f[3].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_1.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_1.L_t_t_f[3].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 4 end -->
+                                                                </div><!-- Post block row end -->
+                                                            </div><!-- Tab pane 1 end -->
+                                                        }
+                                                        @if (Model.M1_L_4.L_t_t_f_2.L_t_t_f != null)
+                                                        {
+                                                            <div class="tab-pane animated fadeIn" id="tab-B">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_2.L_t_t_f[0].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_2.L_t_t_f[0].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_2.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_2.L_t_t_f[0].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 1 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_2.L_t_t_f[1].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_2.L_t_t_f[1].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_2.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_2.L_t_t_f[1].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 2 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_2.L_t_t_f[2].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_2.L_t_t_f[2].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_2.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_2.L_t_t_f[2].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 3 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_2.L_t_t_f[3].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_2.L_t_t_f[3].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_2.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_2.L_t_t_f[3].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 4 end -->
+                                                                </div><!-- Post block row end -->
+
+                                                            </div><!-- Tab pane 2 end -->
+                                                        }
+                                                        @if (Model.M1_L_4.L_t_t_f_3.L_t_t_f != null)
+                                                        {
+                                                            <div class="tab-pane animated fadeIn" id="tab-C">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_3.L_t_t_f[0].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_3.L_t_t_f[0].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_3.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_3.L_t_t_f[0].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 1 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_3.L_t_t_f[1].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_3.L_t_t_f[1].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_3.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_3.L_t_t_f[1].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 2 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_3.L_t_t_f[2].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_3.L_t_t_f[2].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_3.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_3.L_t_t_f[2].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 3 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_3.L_t_t_f[3].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_3.L_t_t_f[3].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_3.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_3.L_t_t_f[3].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 4 end -->
+                                                                </div><!-- Post block row end -->
+                                                            </div><!-- Tab pane 3 end -->
+                                                        }
+                                                        @if (Model.M1_L_4.L_t_t_f_3.L_t_t_f != null)
+                                                        {
+                                                            <div class="tab-pane animated fadeIn" id="tab-D">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_4.L_t_t_f[0].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_4.L_t_t_f[0].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_4.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_4.L_t_t_f[0].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 1 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_4.L_t_t_f[1].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_4.L_t_t_f[1].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_4.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_4.L_t_t_f[1].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 2 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_4.L_t_t_f[2].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_4.L_t_t_f[2].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_4.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_4.L_t_t_f[2].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 3 end -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="post-block-style clearfix">
+                                                                            <div class="post-thumb">
+                                                                                @if (!String.IsNullOrEmpty(Model.M1_L_4.L_t_t_f_4.L_t_t_f[3].file_address))
+                                                                                {
+
+
+                                                                                    <a href="~/M1_4_lttf/Details"><img class="img-responsive" src="@Model.M1_L_4.L_t_t_f_4.L_t_t_f[3].file_address" alt=""></a>
+                                                                                }
+                                                                            </div>
+                                                                            <a class="post-cat" href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_4.name</a>
+                                                                            <div class="post-content">
+                                                                                <h2 class="post-title title-small">
+                                                                                    <a href="~/M1_4_lttf/Details">@Model.M1_L_4.L_t_t_f_4.L_t_t_f[3].title</a>
+                                                                                </h2>
+                                                                            </div><!-- Post content end -->
+                                                                        </div><!-- Post Block style end -->
+                                                                    </div><!-- Col 4 end -->
+                                                                </div><!-- Post block row end -->
+                                                            </div><!-- Tab pane 3 end -->
+                                                        }
+                                                    </div><!-- tab content -->
+                                                </div><!-- Menu tab end -->
+                                            </div><!-- Mega menu end -->
+                                        </li><!-- Tab menu end -->
+
+
+
+
+
+
+
+                                        <li>
+
+                                            <a href="~/dashboard/Details?type=M2">@Model.M2.name</a>
+                                        </li>
+
+                                        <li>
+
+                                            <a href="~/dashboard/Details?type=M3">@Model.M3.name</a>
+                                        </li>
+
+                                        <li>
+
+
+                                            <a href="~/dashboard/Details?type=M4">@Model.M4.name</a>
+                                        </li>
+
+                                        <li>
+
+                                            <a href="~/dashboard/Details?type=M5">@Model.M5.name</a>
+
+                                        </li>
+
+
+                                        <li>
+
+                                            <a href="~/dashboard/Details?type=news">@Model.news.name</a>
+
+                                        </li>
+
+
+
+
+
+                                    </ul><!--/ Nav ul end -->
+                                </div><!--/ Collapse end -->
+
+                            </div><!-- Site Navbar inner end -->
+                        </nav><!--/ Navigation end -->
+                    </div><!-- Header with Menu -->
+
+                </div><!-- Row end -->
+            </div><!--/ Container end -->
+
+        </div><!-- Menu wrapper end -->
+        <!-- del -->
+
+        <section class="block-wrapper">
+            <div class="container">
+                <div class="row">
+                    <!-- delete orginal-->
+                    <div class="page-title">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <ol class="breadcrumb">
+                                        <li><a href="~/Home/Index">خانه</a></li>
+                                        <li>@Model.news.name</li>
+                                    </ol>
+                                </div><!-- Col end -->
+                            </div><!-- Row end -->
+                        </div><!-- Container end -->
+                    </div><!-- Page title end -->
+
+                    <section class="block-wrapper">
+                        <div class="container">
+                            <div class="row">
+
+
+                                <!-- delete orginal orginal-->
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+                                    <div class="block category-listing category-style2">
+                                        <h3 class="block-title"><span>@Model.news.name</span></h3>
+
+                                        @* <ul class="subCategory unstyled">
+                                            <li><a href="#">رباتیک</a></li>
+                                            <li><a href="#">بازی ها</a></li>
+                                            <li><a href="#">گجت ها</a></li>
+                                        </ul>*@
+                                        @{ int n = 0;}
+                                        @foreach (var item in Model.news.L_t_t_f)
+                                        {
+                                            if (item.title != null || item.txt != null)
+                                            {
+                                                <div class="post-block-style post-list clearfix">
+                                                    <div class="row">
+                                                        <div class="col-md-5 col-sm-6">
+                                                            <div class="post-thumb thumb-float-style">
+                                                                @{ string add = "news" + "." + n.ToString();}
+                                                                <a href="~/Home/singel_post?add=@add">
+                                                                    <img class="img-responsive" src="@item.file_address" alt="">
+                                                                </a>
+                                                                <a class="post-cat" href="~/Home/singel_post?add=@add">@Model.news.name</a>
+                                                            </div>
+                                                        </div><!-- Img thumb col end -->
+
+                                                        <div class="col-md-7 col-sm-6">
+                                                            <div class="post-content">
+                                                                <h2 class="post-title title-large">
+                                                                    <a href="~/Home/singel_post?add=@add">@item.title</a>
+                                                                </h2>
+                                                                @*<div class="post-meta">
+                                                                    <span class="post-author"><a href="#">جان اسنو</a></span>
+                                                                    <span class="post-date">24 تیر 1396</span>
+                                                                    <span class="post-comment pull-right">
+                                                                        <i class="fa fa-comments-o"></i>
+                                                                        <a href="#" class="comments-link"><span>03</span></a>
+                                                                    </span>
+                                                                </div>*@
+                                                                <div style="height:150px;">@Html.Raw(item.txt)</div>
+                                                            </div><!-- Post content end -->
+                                                        </div><!-- Post col end -->
+                                                    </div><!-- 1st row end -->
+                                                </div><!-- 1st Post list end -->
+                                            }
+                                            { n++; }
+                                        }
+
+
+
+                                    </div><!-- Block Technology end -->
+                                    @*
+                                    <div class="paging">
+                                        <ul class="pagination">
+                                            <li class="active"><span>1</span></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">بعدی <i class="fa fa-angle-left"></i></a></li>
+                                            <li>
+                                                <span class="page-numbers">صفحه 1 از 2</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    *@
+
+                                </div><!-- Content Col end -->
+                                <!-- delete orginal orginal-->
+
+
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="sidebar sidebar-right">
+
+
+                                        <div class="widget color-default">
+                                            <h3 class="block-title"><span>@Model.left_2.name</span></h3>
+
+                                            <div class="post-overaly-style clearfix">
+                                                <div class="post-thumb">
+                                                    <a href="~/Home/singel_post?add=left_2.0">
+                                                        <img class="img-responsive" src="@Model.left_2.L_t_t_f[0].file_address" alt="">
+                                                    </a>
+                                                </div>
+
+                                                <div class="post-content">
+                                                    <a class="post-cat" href="~/Home/singel_post?add=left_2.0">@Model.left_2.name</a>
+                                                    <h2 class="post-title">
+                                                        <a href="~/Home/singel_post?add=left_2.0">@Model.left_2.L_t_t_f[0].title</a>
+                                                    </h2>
+
+
+
+
+                                                </div><!-- Post content end -->
+
+
+                                            </div><!-- Post Overaly Article end -->
+
+
+                                            <div class="list-post-block">
+                                                <ul class="list-post">
+
+                                                    @for (int i = 1; i <= 4; i++)
+                                                    {
+                                                        <li class="clearfix">
+                                                            <div class="post-block-style post-float clearfix">
+                                                                <div class="post-thumb">
+                                                                    <a href="~/Home/singel_post?add=left_2.@i">
+                                                                        <img class="img-responsive" src="@Model.left_2.L_t_t_f[i].file_address" alt="">
+                                                                    </a>
+                                                                    <a class="post-cat" href="~/Home/singel_post?add=left_2.@i">@Model.left_2.name</a>
+                                                                </div><!-- Post thumb end -->
+
+                                                                <div class="post-content">
+                                                                    <h2 class="post-title title-small">
+                                                                        <a href="~/Home/singel_post?add=left_2.@i">@Model.left_2.L_t_t_f[i].title</a>
+                                                                    </h2>
+                                                                    @*<div class="post-meta">
+                                                                        <span class="post-date">15 آذر 1396</span>
+                                                                    </div>*@
+                                                                </div><!-- Post content end -->
+                                                            </div><!-- Post block style end -->
+                                                        </li><!-- Li 1 end -->
+                                                    }
+
+
+                                                </ul><!-- List post end -->
+                                            </div><!-- List post block end -->
+
+                                            <div style="padding-top:50px;padding-right:10px;">
+                                                <form action="~/dashboard/Details" method="post">
+                                                    <input name="type" value="left_2" hidden />
+                                                    <button class="btn btn-primary">بیشتر</button>
+                                                </form>
+                                            </div>
+
+                                        </div><!-- Popular news widget end -->
+
+                                        <div class="widget">
+                                            <h3 class="block-title"><span>ما را دنبال کنید</span></h3>
+
+                                            <ul class="social-icon">
+
+                                                <li><a href="https://www.instagram.com/iraniansrights/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://t.me/iraniansrights" target="_blank"><i class="fa fa-telegram"></i></a></li>
+                                                <li><a href="skype:iraniansrights?chat" target="_blank"><i class="fa fa-skype"></i></a></li>
+
+
+                                            </ul>
+                                        </div><!-- Widget Social end -->
+                                        @*                            <div class="widget">
+
+                                            <ul class="social-icon-box unstyled">
+                                                <li class="rss">
+                                                    <a href="#">
+                                                        <i class="fa fa-telegram"></i>
+                                                        <span class="ts-social-title">telegram</span>
+                                                        <span class="ts-social-desc">لورم ایپسوم متن ساختگی</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="facebook">
+                                                    <a href="#">
+                                                        <i class="fa fa-rss"></i>
+                                                        <span class="ts-social-title">فیسبوک</span>
+                                                        <span class="ts-social-desc">لورم ایپسوم متن ساختگی</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="twitter">
+                                                    <a href="#">
+                                                        <i class="fa fa-twitter"></i>
+                                                        <span class="ts-social-title">توییتر</span>
+                                                        <span class="ts-social-desc">لورم ایپسوم متن ساختگی</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="gplus">
+                                                    <a href="#">
+                                                        <i class="fa fa-instagram"></i>
+                                                        <span class="ts-social-title">instagram</span>
+                                                        <span class="ts-social-desc">لورم ایپسوم متن ساختگی</span>
+                                                    </a>
+                                                </li>
+                                                <li class="twitter">
+                                                    <a href="#">
+                                                        <i class="fa fa-skype"></i>
+                                                        <span class="ts-social-title">skype</span>
+                                                        <span class="ts-social-desc">لورم ایپسوم متن ساختگی</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div> Widget Social box end *@
+
+                                        <div class="widget color-default m-bottom-0">
+                                            <h3 class="block-title"><span>@Model.left_1.name</span></h3>
+
+                                            <div id="post-slide" class="owl-carousel owl-theme post-slide">
+                                                <div class="item">
+
+                                                    <div class="post-overaly-style text-center clearfix">
+                                                        <div class="post-thumb">
+                                                            <a href="~/Home/singel_post?add=left_1.0">
+                                                                @if (!String.IsNullOrEmpty(Model.left_1.L_t_t_f[0].file_address))
+                                                                {
+
+
+                                                                    <img class="img-responsive" src="@Model.left_1.L_t_t_f[0].file_address" alt="">
+                                                                }
+
+                                                            </a>
+                                                        </div><!-- Post thumb end -->
+
+                                                        <div class="post-content">
+                                                            <a class="post-cat" href="~/Home/singel_post?add=left_1.0">@Model.left_1.name</a>
+                                                            <h2 class="post-title">
+                                                                <a href="~/Home/singel_post?add=left_1.0">@Model.left_1.L_t_t_f[0].title</a>
+                                                            </h2>
+                                                            <div class="post-meta">
+                                                                @*<span class="post-date">2 شهریور 1396</span>*@
+                                                            </div>
+                                                        </div><!-- Post content end -->
+                                                    </div><!-- Post Overaly Article 1 end -->
+
+                                                    <div class="post-overaly-style text-center clearfix">
+                                                        <div class="post-thumb">
+                                                            <a href="~/Home/singel_post?add=left_1.1">
+                                                                @if (!String.IsNullOrEmpty(Model.left_1.L_t_t_f[1].file_address))
+                                                                {
+
+
+                                                                    <img class="img-responsive" src="@Model.left_1.L_t_t_f[1].file_address" alt="">
+                                                                }
+                                                            </a>
+                                                        </div><!-- Post thumb end -->
+
+                                                        <div class="post-content">
+                                                            <a class="post-cat" href="~/Home/singel_post?add=left_1.1">@Model.left_1.name</a>
+                                                            <h2 class="post-title">
+                                                                <a href="~/Home/singel_post?add=left_1.1">@Model.left_1.L_t_t_f[1].title</a>
+                                                            </h2>
+                                                            <div class="post-meta">
+
+                                                            </div>
+                                                        </div><!-- Post content end -->
+                                                    </div><!-- Post Overaly Article 2 end -->
+
+                                                </div><!-- Item 1 end -->
+
+                                                <div class="item">
+
+                                                    <div class="post-overaly-style text-center clearfix">
+                                                        <div class="post-thumb">
+                                                            <a href="~/Home/singel_post?add=left_1.2">
+                                                                @if (!String.IsNullOrEmpty(Model.left_1.L_t_t_f[2].file_address))
+                                                                {
+
+
+                                                                    <img class="img-responsive" src="@Model.left_1.L_t_t_f[2].file_address" alt="">
+                                                                }
+                                                            </a>
+                                                        </div><!-- Post thumb end -->
+
+                                                        <div class="post-content">
+                                                            <a class="post-cat" href="~/Home/singel_post?add=left_1.2">@Model.left_1.name</a>
+                                                            <h2 class="post-title">
+                                                                <a href="~/Home/singel_post?add=left_1.2">@Model.left_1.L_t_t_f[2].title</a>
+                                                            </h2>
+                                                            <div class="post-meta">
+                                                                @*<span class="post-date">2 شهریور 1396</span>*@
+                                                            </div>
+                                                        </div><!-- Post content end -->
+                                                    </div><!-- Post Overaly Article 3 end -->
+
+                                                    <div class="post-overaly-style text-center clearfix">
+                                                        <div class="post-thumb">
+                                                            <a href="~/Home/singel_post?add=left_1.3">
+                                                                @if (!String.IsNullOrEmpty(Model.left_1.L_t_t_f[3].file_address))
+                                                                {
+
+
+                                                                    <img class="img-responsive" src="@Model.left_1.L_t_t_f[3].file_address" alt="">
+                                                                }
+                                                            </a>
+                                                        </div><!-- Post thumb end -->
+
+                                                        <div class="post-content">
+                                                            <a class="post-cat" href="~/Home/singel_post?add=left_1.3">@Model.left_1.name</a>
+                                                            <h2 class="post-title">
+                                                                <a href="~/Home/singel_post?add=left_1.3">@Model.left_1.L_t_t_f[3].title</a>
+                                                            </h2>
+                                                            <div class="post-meta">
+                                                                @*<span class="post-date">2 شهریور 1396</span>*@
+                                                            </div>
+                                                        </div><!-- Post content end -->
+                                                    </div><!-- Post Overaly Article 4 end -->
+
+                                                </div><!-- Item 2 end -->
+
+                                            </div><!-- Post slide carousel end -->
+                                            <div style="padding-top:30px;padding-right:10px;">
+                                                <form action="~/dashboard/Details" method="post">
+                                                    <input name="type" value="left_1" hidden />
+                                                    <button class="btn btn-primary">بیشتر</button>
+                                                </form>
+                                            </div>
+                                        </div><!-- Trending news end -->
+
+
+
+
+
+
+                                    </div><!-- Sidebar right end -->
+                                </div><!-- Sidebar Col end -->
+
+                            </div><!-- Row end -->
+                        </div><!-- Container end -->
+                    </section><!-- First block end -->
+                    <!--delete orginal-->
+
+
+
+
+
+
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </section><!-- First block end -->
+        <!-- del -->
+
+
+
+        <section class="ad-content-area text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        @*<img class="img-responsive" src="/news_front/images/banner-ads/ad-content-two.png" alt="">*@
+                    </div><!-- Col end -->
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </section><!-- Ad content two end -->
+
+
+
+
+        <footer id="footer" class="footer">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12 footer-widget">
+                            <h3 class="widget-title">خبرها</h3>
+                            <div class="list-post-block">
+                                <ul class="list-post">
+                                    @for (int i = 0; i < 4; i++)
+                                    {
+                                        <li class="clearfix">
+                                            <div class="post-block-style post-float clearfix">
+                                                <div class="post-thumb">
+                                                    <a href="~/Home/singel_post?add=news.@i">
+                                                        @if (!String.IsNullOrEmpty(Model.news.L_t_t_f[i].file_address))
+                                                        {
+
+
+                                                            <img class="img-responsive" src="@Model.news.L_t_t_f[i].file_address" alt="">
+                                                        }
+
+                                                    </a>
+                                                </div><!-- Post thumb end -->
+
+                                                <div class="post-content">
+                                                    <h2 class="post-title title-small">
+                                                        <a href="~/Home/singel_post?add=news.@i">@Model.news.L_t_t_f[i].title</a>
+                                                    </h2>
+                                                    <div class="post-meta">
+                                                        @* <span class="post-date">15 آذر 1396</span>*@
+                                                    </div>
+                                                </div><!-- Post content end -->
+                                            </div><!-- Post block style end -->
+                                        </li><!-- Li 1 end -->
+                                    }
+                                    <!--<li class="clearfix">
+                                <div class="post-block-style post-float clearfix">
+                                    <div class="post-thumb">
+                                        <a href="#">
+                                            <img class="img-responsive" src="/news_front/images/news/lifestyle/health3.jpg" alt="">
+                                        </a>
+                                    </div>-->
+                                    <!-- Post thumb end -->
+                                    <!--<div class="post-content">
+                                    <h2 class="post-title title-small">
+                                        <a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</a>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <span class="post-date">18 بهمن 1396</span>
+                                    </div>
+                                </div>-->
+                                    <!-- Post content end -->
+                                    <!--</div>--><!-- Post block style end -->
+                                    <!--</li>--><!-- Li 2 end -->
+                                    <!--<li class="clearfix">
+                                <div class="post-block-style post-float clearfix">
+                                    <div class="post-thumb">
+                                        <a href="#">
+                                            <img class="img-responsive" src="/news_front/images/news/lifestyle/health4.jpg" alt="">
+                                        </a>
+                                    </div>-->
+                                    <!-- Post thumb end -->
+                                    <!--<div class="post-content">
+                                    <h2 class="post-title title-small">
+                                        <a href="#">لورم ایپسوم متن ساختگی با تولید سادگی</a>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <span class="post-date">30 فروردین 1396</span>
+                                    </div>
+                                </div>-->
+                                    <!-- Post content end -->
+                                    <!--</div>--><!-- Post block style end -->
+                                    <!--</li>--><!-- Li 3 end -->
+
+
+                                </ul><!-- List post end -->
+                            </div><!-- List post block end -->
+
+                        </div><!-- Col end -->
+
+                        <div class="col-md-3 col-xs-12 footer-widget widget-categories">
+                            <h3 class="widget-title">موضوعات داغ</h3>
+                            <ul>
+                                <li>
+                                    <a href="~/M1_4_lttf/Details"><span class="catTitle">@Model.M1_L_4.L_t_t_f_1.name</span><span class="catCounter"> (@Model.M1_L_4.L_t_t_f_1.L_t_t_f.Count)</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="~/M1_4_lttf/Details"><span class="catTitle">@Model.M1_L_4.L_t_t_f_2.name</span><span class="catCounter"> (@Model.M1_L_4.L_t_t_f_2.L_t_t_f.Count)</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="~/M1_4_lttf/Details"><span class="catTitle">@Model.M1_L_4.L_t_t_f_3.name</span><span class="catCounter"> (@Model.M1_L_4.L_t_t_f_2.L_t_t_f.Count)</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="~/M1_4_lttf/Details"><span class="catTitle">@Model.M1_L_4.L_t_t_f_4.name</span><span class="catCounter"> (@Model.M1_L_4.L_t_t_f_2.L_t_t_f.Count)</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="~/dashboard/Details?type=M2"><span class="catTitle">@Model.M2.name</span><span class="catCounter"> (@Model.M2.L_t_t_f.Count)</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="~/dashboard/Details?type=M3"><span class="catTitle">@Model.M3.name</span><span class="catCounter"> (@Model.M3.L_t_t_f.Count)</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="~/dashboard/Details?type=M4"><span class="catTitle">@Model.M4.name</span><span class="catCounter"> (@Model.M4.L_t_t_f.Count)</span></a>
+                                </li>
+
+                            </ul>
+
+                        </div><!-- Col end -->
+                        @*<div class="col-md-3 col-xs-12 footer-widget twitter-widget">
+                            <h3 class="widget-title">جدیدترین توییت ها</h3>
+                            <ul>
+                                <li>
+                                    <div class="tweet-text">
+                                        <span>13 روز پیش</span>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                        <br><a href="#" class="ltr_text"></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tweet-text">
+                                        <span>15 روز پیش</span>
+                                        لورم ایپسوم متن ساختگی با
+                                        <br><a href="#" class="ltr_text"></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tweet-text">
+                                        <span>1 ماه پیش</span>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                        <br><a href="#" class="ltr_text"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>*@<!-- Col end -->
+
+                        <div class="col-md-6 col-xs-12 footer-widget">
+                            <h3 class="widget-title"><a style="color:white !important;" href="~/dashboard/Details?type=left_img">تصاویر روز</a> </h3>
+                            <div class="gallery-widget">
+                                @for (int i = 0; i < 9; i++)
+                                {
+                                    @if (!String.IsNullOrEmpty(Model.left_img.L_t_t_f[i].file_address))
+                                    {
+
+
+                                        <a href="~/Home/singel_post?add=left_img.@i"><img class="img-responsive" src="@Model.left_img.L_t_t_f[i].file_address" alt=""></a>
+                                    }
+                                }
+
+                            </div>
+                        </div><!-- Col end -->
+
+                    </div><!-- Row end -->
+                </div><!-- Container end -->
+            </div><!-- Footer main end -->
+
+            <div class="footer-info text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-info-content">
+                                <div class="footer-logo">
+                                    <img style="width:200px;height:200px;" class="img-responsive" src="/news_front/images/logos/footer-logo.png" alt="">
+                                </div>
+                                <p>مرکز بین المللی حقوق ایرانیان؛ شورایی حمایتی از حقوق اقلیت های قومی و مذهبی در ایران و همچنین مسئول گزارش دوره ای و سالانه نقض حقوق بشر ایرانیان به نهادهای ذیربط در سازمان ملل متحد می باشد</p>
+                                @*<p class="footer-info-phone"><i class="fa fa-phone"></i> <span class="ltr_text">+(785) 238-4131</span></p>*@
+                                @*<p class="footer-info-email"><i class="fa fa-envelope-o"></i> <span class="ltr_text">info@example.com</span></p>*@
+                                <ul class="unstyled footer-social">
+                                    <li>
+                                        <a title="telegram" href=" https://t.me/iraniansrights">
+                                            <span class="social-icon"><i class="fa fa-telegram"></i></span>
+                                        </a>
+                                        <a title="Facebook" href="#">
+                                            <span class="social-icon"><i class="fa fa-facebook"></i></span>
+                                        </a>
+                                        <a title="Twitter" href="#">
+                                            <span class="social-icon"><i class="fa fa-twitter"></i></span>
+                                        </a>
+                                        <a title="Skype" href="skype:iraniansrights?chat ">
+                                            <span class="social-icon"><i class="fa fa-skype"></i></span>
+                                        </a>
+                                        <a title="instagram" href="https://www.instagram.com/iraniansrights/">
+                                            <span class="social-icon"><i class="fa fa-instagram"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- Footer info content end -->
+                        </div><!-- Col end -->
+                    </div><!-- Row end -->
+                </div><!-- Container end -->
+            </div><!-- Footer info end -->
+
+        </footer><!-- Footer end -->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="copyright-info">
+                            <span>تمامی حقوق برای این وب سایت محفوظ است</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="footer-menu">
+                            <ul class="nav unstyled">
+                                @*<li><a href="#">قوانین سایت</a></li>
+                                <li><a href="#">حریم شخصی</a></li>
+                                <li><a href="#">تبلیغات</a></li>*@
+                                <li><a href="~/Home/about">در باره‌ی ما</a></li>
+                                <li><a href="~/Home/contact">تماس با ما</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- Row end -->
+
+                <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+                    <button class="btn btn-primary" title="Back to Top">
+                        <i class="fa fa-angle-up"></i>
+                    </button>
+                </div>
+
+            </div><!-- Container end -->
+        </div><!-- Copyright end -->
+        <!-- Javascript Files
+    ================================================== -->
+        <!-- initialize jQuery Library -->
+        <script type="text/javascript" src="/news_front/js/jquery.js"></script>
+        <!-- Bootstrap jQuery -->
+        <script type="text/javascript" src="/news_front/js/bootstrap.min.js"></script>
+        <!-- Owl Carousel -->
+        <script type="text/javascript" src="/news_front/js/owl.carousel.min.js"></script>
+        <!-- Counter -->
+        <script type="text/javascript" src="/news_front/js/jquery.counterup.min.js"></script>
+        <!-- Waypoints -->
+        <script type="text/javascript" src="/news_front/js/waypoints.min.js"></script>
+        <!-- Color box -->
+        <script type="text/javascript" src="/news_front/js/jquery.colorbox.js"></script>
+
+
+        <!-- Template custom -->
+        <script type="text/javascript" src="/news_front/js/custom.js"></script>
+
+    </div><!-- Body inner end -->
+</body>
+</html>

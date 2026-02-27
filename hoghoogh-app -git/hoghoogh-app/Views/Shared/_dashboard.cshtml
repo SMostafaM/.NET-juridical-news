@@ -1,0 +1,244 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="UTF-8">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="/dashboard/style.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("../../wwwroot/b4.png");
+@*            background-repeat: no-repeat*@
+        }
+        #grad1 {
+            background-color: #cccccc;
+            background: linear-gradient(rgb(102, 255, 255), rgb(204, 255, 255),rgb(179, 255, 179))no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body id="grad1">
+    <div dir="rtl">
+        <nav class="main-menu">
+            <ul>
+
+                <li class="has-subnav">
+                    <a href="~/User/index">
+                        <i class="fa fa-laptop fa-2x"><img src="~/icon/up.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            کاربران
+                        </span>
+                    </a>
+                </li>
+
+                <li class="has-subnav">
+                    <a href="~/M1_4_lttf/index">
+                        <i class="fa fa-list fa-2x"><img src="~/icon/hp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            موضوع 1 و زیر مجوعه ها @*(@home.M1_L_4.name)*@
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="~/M2/index">
+                        <i class="fa fa-table fa-2x"><img src="~/icon/lp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            موضوع 2@*(@home.M2.name)*@
+                        </span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="~/M3/index">
+                        <i class="fa fa-table fa-2x"><img src="~/icon/lp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            موضوع 3@*(@home.M3.name)*@
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="~/M4/index">
+                        <i class="fa fa-table fa-2x"><img src="~/icon/lp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            موضوع 4@*(@home.M4.name)*@
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="~/M5/index">
+                        <i class="fa fa-table fa-2x"><img src="~/icon/lp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            موضوع 5@*(@home.M5.name)*@
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="has-subnav">
+                    <a href="~/News/index">
+                        <i class="fa fa-list fa-2x"><img src="~/icon/hp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            انتهایی@*(@home.news.name)*@
+                        </span>
+                    </a>
+                </li>
+
+                <li class="has-subnav">
+                    <a href="~/Slider/index">
+                        <i class="fa fa-list fa-2x"><img src="~/icon/hp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            اسلایدر@*(@home.slider.name)*@
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="has-subnav">
+                    <a href="~/Pazel_img/index">
+                        <i class="fa fa-list fa-2x"><img src="~/icon/hp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                             تصاویر روز@*(@home.left_img.name)*@
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="has-subnav">
+                    <a href="~/video/index">
+                        <i class="fa fa-list fa-2x"><img src="~/icon/hp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            ویدیو@*(@home.video.name)*@
+                        </span>
+                    </a>
+                </li>
+
+                <li class="has-subnav">
+                    <a href="~/left_1/index">
+                        <i class="fa fa-list fa-2x"><img src="~/icon/hp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            عنوان اول چپ@*(@home.left_1.name)*@
+                        </span>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="~/left_2/index">
+                        <i class="fa fa-list fa-2x"><img src="~/icon/hp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            عنوان دوم چپ@*(@home.left_2.name)*@
+                        </span>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="~/left_3/index">
+                        <i class="fa fa-list fa-2x"><img src="~/icon/hp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            عنوان سوم چپ@*(@home.left_3.name)*@
+                        </span>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="~/Mail/index">
+                        <i class="fa fa-list fa-2x"><img src="~/icon/hp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            ایمل های ثبت نامی در خبر نامه
+                        </span>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="~/User_send/index">
+                        <i class="fa fa-list fa-2x"><img src="~/icon/hp.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            اطلاعات ارسالی کاربران
+                        </span>
+                    </a>
+                </li>
+
+            </ul>
+
+
+
+
+            @*<li>
+                    <a href="http://justinfarrow.com">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            Pages
+                        </span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-bar-chart-o fa-2x"></i>
+                        <span class="nav-text">
+                            Graphs and Statistics
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-font fa-2x"></i>
+                        <span class="nav-text">
+                            Quotes
+                        </span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="#">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">
+                            Maps
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-info fa-2x"></i>
+                        <span class="nav-text">
+                            Documentation
+                        </span>
+                    </a>
+                </li>*@
+
+
+
+            <ul class="logout">
+                <li>
+                    <a href="~/dashboard/remove_cookie">
+                        <i class="fa fa-power-off fa-2x"><img src="~/icon/ep.png" style="width:30px;height:30px" /></i>
+                        <span class="nav-text">
+                            خروج
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div style="padding-left:60px">
+        @RenderBody()
+
+    </div>
+</body>
+</html>
+
+

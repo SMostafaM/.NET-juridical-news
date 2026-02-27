@@ -1,0 +1,58 @@
+﻿@model IEnumerable<hoghoogh_app.Models.Mail>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_dashboard.cshtml";
+}
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+<table style="width:800px;" class="table">
+    <thead>
+        <tr>
+           <th>
+                ردیف
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mail)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+
+        @{ int i = 1;}
+
+@foreach (var item in Model) {
+        <tr>
+            @if (item.mail != null)
+            {
+                <td>
+                    @i
+                </td>
+
+                i++;
+                <td>
+                    @Html.DisplayFor(modelItem => item.mail)
+                </td>
+
+            }
+        </tr>
+}
+    </tbody>
+</table>

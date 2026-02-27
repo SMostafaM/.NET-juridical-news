@@ -1,0 +1,61 @@
+﻿@model IEnumerable<hoghoogh_app.Models.Data_U_S>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_dashboard.cshtml";
+}
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.subject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.explain)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.file_address)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subject)
+            </td>
+            <td style="max-inline-size:70px;max-width:80px;">
+                <p style="width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"> @Html.Raw(item.explain)</p>
+               
+            </td>
+            <td>
+                <a href="@item.file_address" download="">دانلود محتویات ارسالی</a> 
+            </td>
+            <td>
+                
+                @Html.ActionLink("Details", "Details", new {  id=item.Id  }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

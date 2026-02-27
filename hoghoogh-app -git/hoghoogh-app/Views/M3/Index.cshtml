@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_dashboard.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index </title>
+
+    <link rel="stylesheet" href="/button/style.css">
+
+</head>
+<body>
+
+    <h1 class="main">موضوع 3 </h1>
+    <div class="main">
+
+        @*        <div class="sub-main">
+                <button class="button-one">Tap Me</button>
+            </div>
+            <div class="sub-main">
+                <button class="button-two"><span>Hover Me</span></button>
+            </div>*@
+        <form action="~/Dashboard/Details" method="get">
+            <input name="type" value="M3" hidden />
+            <p class="sub-main">
+                <button class="button-three">مشاهده</button>
+            </p>
+        </form>
+
+
+        <form action="~/Dashboard/Create" method="get">
+            <input name="type" value="M3" hidden />
+            <p class="sub-main">
+                <button class="button-three">ایجاد</button>
+            </p>
+        </form>
+
+
+        <form action="~/Dashboard/Edit" method="get">
+            <input name="type" value="M3" hidden />
+            <p class="sub-main">
+                <button class="button-three">ویرایش</button>
+            </p>
+        </form>
+
+
+    </div>
+
+
+</body>
+</html>
+
+
